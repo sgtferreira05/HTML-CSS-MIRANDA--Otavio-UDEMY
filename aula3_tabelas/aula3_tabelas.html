@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        tfoot td, table th {
+            background: #ddd;
+        }
+        tfoot {
+            font-style: italic;
+        }
+        .reponsive-table {
+            max-width: 100%;
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="responsive-table">
+    <table> 
+        <caption> descrição da tabela </caption>
+       <thead>
+        <tr>
+            <th> TÍTULO 1 </th>
+            <th> TÍTULO 2 </th>
+            <th> TÍTULO 3 </th>
+            <th> TÍTULO 4 </th>
+        </tr>
+       </thead> 
+       <tbody>
+        <tr>
+            <td colspan="3" rowspan="2"> corpo 1 </td>
+            <td> corpo 4 </td>
+        </tr>
+        <tr>
+            <td> corpo 4 </td>
+        </tr>
+        <tr>
+            <td> corpo 1 </td>
+            <td> corpo 2 </td>
+            <td> corpo 3 </td>
+            <td> corpo 4 </td>
+        </tr>
+        <tr>
+            <td> corpo 1 </td>
+            <td> corpo 2 </td>
+            <td> corpo 3 </td>
+            <td> corpo 4 </td>
+        </tr>
+                
+       </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="3" rowspan="2"></td>
+            <td> TOTAL: R$ 555</td>
+        </tr>
+       </tfoot>
+    </table>
+</div>
+</body>
+</html>

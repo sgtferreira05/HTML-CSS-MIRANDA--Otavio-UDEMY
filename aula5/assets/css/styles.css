@@ -1,0 +1,143 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+p, h1 {
+    color: purple;
+}
+
+body div section p, 
+body div section h1 {
+    color: red;
+} */
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+/* 
+body div.main-content h1,h2.heading {
+    font-style: italic;
+    color: red;
+}
+
+div {
+    color: initial;
+    margin-left: 10px
+}
+.pai > .filha{
+    color: red;
+} */
+
+
+
+
+
+ /* # SELECIONAR APENAS OS QUE ESTÃO LOGO EM SEGUIDA: */
+
+/* .pai h1+p{
+    color: red;
+} */
+
+
+
+
+
+/* # SELECIONAR TODOS P QUE ESTÃO ABAIXO, SEM EXCESSÃO: */
+
+/* .pai h1~p {
+    color: green;
+}
+
+.pai .um ~ .dois{
+    color: red;
+} */
+
+
+
+
+/* # SELECIONAR POR ATRIBUTO */
+
+/* 
+/* FOR IGUAL */
+/* [meu-atributo = "chave"] {
+    color: red;
+}
+
+[meu-atributo ~= "valor1"] {
+    color: red;
+} */
+
+
+
+/* COMEÇA */
+/* [meu-atributo ^= "qualquercoisa"] {
+    color: red;
+} */
+
+
+
+/* TERMINA */
+/* [meu-atributo $= "ll"] {
+    color: purple;
+}
+ */
+
+
+/* CONTÉM */
+/* [meu-atributo *= "A"] {
+    color: grey;
+}
+
+[checked] {
+    width: 30px;
+    height: 30px;
+}  */
+
+
+/* PSEUDO-CLASSES */
+
+.heading:hover {
+    background: red;
+}
+
+.heading {
+    transition: all 2s ease-in-out;
+}
+
+a {
+    color: rgb(49, 75, 219);
+}
+
+a:link {
+    color:rgb(48, 239, 176);
+}
+
+a:visited {
+    color:rgb(3, 84, 44);
+}
+
+a:active {
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+input:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+input:checked  + p{
+    background: red;
+}
+
+.pai .lista li:first-child{
+    background: yellow;
+}

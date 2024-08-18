@@ -1,0 +1,10 @@
+#texto {
+    color: red;
+    font-family: sans-serif;
+    font-size: 4px;
+}
+
+p{
+     font-size: initial; /*DESATIVAR A HERANÇA */
+    font-size: inherit; /*ATIVAR A HERANÇA*/
+}
