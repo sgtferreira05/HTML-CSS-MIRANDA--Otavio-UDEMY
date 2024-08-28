@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header'
+    'nav main'
+    'rodape rodape';
+}
+.grid div:nth-child(1) {
+    background: red;
+    grid-area: header;
+}
+.grid div:nth-child(2) {
+    background: yellow;
+    grid-area: nav;
+}
+.grid div:nth-child(3) {
+    background: violet;
+    grid-area: main;
+
+}
+.grid div:nth-child(4) {
+    background: turquoise;
+    grid-area: rodape;
+}
